@@ -76,8 +76,10 @@ mongoose.connect(ENV.MONGODB_URI, {
     process.exit(1);
 });
 
-// Import Routes
-const routes = require('./4.routes');
+// ============================================
+// 📤 IMPORT ROUTES - এই লাইনটা ঠিক করলাম
+// ============================================
+const routes = require('./routes');  // ← এখন ঠিক আছে (4 সরিয়ে দিয়েছি)
 app.use('/', routes);
 
 // ============================================
