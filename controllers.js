@@ -1,12 +1,12 @@
 // ============================================
 // 🎮 MEGATOOLS CONTROLLERS
-// File 3/5: All Business Logic
+// File 3/5: All Business Logic (FIXED)
 // ============================================
 
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const crypto = require('crypto');
-const Models = require('./2.models');
+const Models = require('./models');  // ← এটা ঠিক করলাম (2.models → models)
 
 const { User, Campaign, Visitor, Referral, Submission, Log, Settings } = Models;
 
