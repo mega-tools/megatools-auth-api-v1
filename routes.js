@@ -1,14 +1,14 @@
 // ============================================
 // 🛣️ MEGATOOLS API ROUTES
-// File 4/5: All API Endpoints
+// File 4/5: All API Endpoints (FIXED)
 // ============================================
 
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const path = require('path');
-const Controllers = require('./3.controllers');
-const Models = require('./2.models');
+const Controllers = require('./controllers');  // ← ঠিক করেছি (3.controllers → controllers)
+const Models = require('./models');            // ← ঠিক করেছি (2.models → models)
 
 const router = express.Router();
 
